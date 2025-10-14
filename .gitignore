@@ -1,0 +1,10 @@
+# Ignorar ficheiro de configuração com senha
+App.config
+
+# Ignorar ficheiros temporários e de build
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.log
