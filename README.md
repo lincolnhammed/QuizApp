@@ -56,8 +56,19 @@ CREATE TABLE opcoes (
 );
 ```
 
-2. Insira perguntas e quatro alternativas (apenas **uma** marcada como correta) para cada registro em `perguntas`.
+2. Exemplo - Insira perguntas e quatro alternativas (apenas **uma** marcada como correta) para cada registro em `perguntas`.
+```sql
+INSERT INTO perguntas (texto) VALUES
+('Qual é a capital de Portugal?');
 
+INSERT INTO opcoes (texto, correta, id_pergunta) VALUES
+-- 1 - Capital de Portugal
+('Lisboa', 1, 1),
+('Porto', 0, 1),
+('Faro', 0, 1),
+('Coimbra', 0, 1);
+
+```
 ---
 
 ## ⚙️ App.config
